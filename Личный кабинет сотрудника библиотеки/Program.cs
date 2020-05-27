@@ -8,6 +8,7 @@ namespace Личный_кабинет_сотрудника_библиотеки
 {
     static class Program
     {
+        public static БиблиотекаEntities3 библиотека = new БиблиотекаEntities3();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +17,7 @@ namespace Личный_кабинет_сотрудника_библиотеки
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormAuthorization());
         }
     }
 }
